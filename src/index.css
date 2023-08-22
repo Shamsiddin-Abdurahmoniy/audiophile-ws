@@ -1,0 +1,93 @@
+/* GLOBAL STYLES */
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/manrope-v14-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/manrope-v14-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/manrope-v14-latin-700.woff2") format("woff2");
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--secondary-pale-color);
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  max-width: 1190px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  display: flex;
+}
+:root {
+  /* colors */
+  --primary-color: #d87d4a;
+  --primary-pale-color: #fbaf85;
+  --secondary-color: #f1f1f1;
+  --secondary-pale-color: #fafafa;
+  --footer-bg-color: #101010;
+  --header-bg-color: #0e0e0e;
+  --text-color: #000;
+  --white-color: #fff;
+  /* fonts */
+  --font-family: "Manrope", sans-serif;
+  --text-font-size: 1.5rem;
+  --text-font-weight: 500;
+  --text-line-height: 2.5rem;
+  --title-font-weight: 700;
+  --title-font-size: 4rem;
+  --title-line-height: 4.4rem;
+  --title-ltr-spc: 0.0142rem;
+}
+main {
+  flex-grow: 1;
+}
